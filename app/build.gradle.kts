@@ -15,7 +15,7 @@ android {
         versionName = "1.0"
 
         // ⬇️⬇️ غيّر الرابط ده برابط منصتك على GitHub Pages (لازم ينتهي بـ /) ⬇️⬇️
-        buildConfigField("String", "START_URL", "\"https://USERNAME.github.io/REPO/\"")
+        buildConfigField("String", "START_URL", "\"https://mam-ship-it.github.io/MODO-AI/\"")
     }
 
     buildFeatures { buildConfig = true }
