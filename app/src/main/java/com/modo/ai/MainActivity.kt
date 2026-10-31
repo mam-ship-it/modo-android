@@ -71,7 +71,7 @@ class MainActivity : Activity() {
                 // أي رابط خارجي يفتح في المتصفح العادي
                 try {
                     startActivity(Intent(Intent.ACTION_VIEW, request.url))
-                } catch (_: Exception) {
+                } catch (e: Exception) {
                 }
                 return true
             }
@@ -95,7 +95,7 @@ class MainActivity : Activity() {
 
         // دعم الفيديو بملء الشاشة
         web.webChromeClient = object : WebChromeClient() {
-            override fun onShowCustomView(view: View, callback: CustomViewCallback) {
+            override fun onShowCustomView(view: View, callback: WebChromeClient.CustomViewCallback) {
                 if (customView != null) {
                     callback.onCustomViewHidden()
                     return
